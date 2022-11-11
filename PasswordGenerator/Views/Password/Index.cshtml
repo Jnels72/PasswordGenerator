@@ -1,0 +1,24 @@
+﻿@model PasswordModel
+
+@{
+
+    ViewBag.Title = "Generate Password";
+}
+
+<form method="post" action="GenerateAlphaNumericPWD">
+    <div class="mb-3">
+        <label for="passwordLength" class="form-label">Password Length</label>
+        <input type="number" class="form-control" name="passwordLength">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">
+           Generate Password
+        </button>
+    </div>
+</form>
+<div class="text-center">
+    <h1><strong>@Model.rndPassword</strong></h1>
+</div>
+
+
+   
